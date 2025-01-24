@@ -7479,7 +7479,7 @@ h1, h2, h3, h4, h5,
     letter-spacing: 4px; }
 
 .owl-carousel {
-  position: relative; }
+  overflow: visible !important;  }
   .owl-carousel .owl-item {
     opacity: .4; }
     .owl-carousel .owl-item.active {
@@ -7525,16 +7525,19 @@ h1, h2, h3, h4, h5,
       background-repeat: no-repeat;
       background-position: center center;
       min-height: 100vh;
-      position: relative;
+      overflow: visible !important; 
       z-index: 0; }
       .owl-carousel.home-slider .slider-item .overlay {
        
+        overflow: visible !important; 
         top: 0;
-        bottom: 0;
         left: 0;
-        right: 0;
+        width: 100%;
+        height: 100%;
         background: #000;
-        opacity: .5; }
+        opacity: 0.5;
+        position: relative;
+        z-index: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
         color: #fff;
         height: 750px;
@@ -7605,7 +7608,8 @@ h1, h2, h3, h4, h5,
     .owl-carousel.home-slider:hover .owl-nav .owl-next {
       right: 20px; }
     .owl-carousel.home-slider .owl-dots {
-      position: absolute;
+      position: relative;
+      z-index: 0;
       left: 0;
       right: 0;
       bottom: 40px;
@@ -7646,7 +7650,11 @@ h1, h2, h3, h4, h5,
             background: white; }
 
 
-
+            .owl-carousel img {
+              touch-action: pan-y; /* Allows vertical scrolling */
+              pointer-events: none; /* Prevents the image from blocking scroll events */
+          }
+          
 
 
 
