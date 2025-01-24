@@ -7517,7 +7517,7 @@ h1, h2, h3, h4, h5,
   .owl-carousel:hover .owl-nav .owl-next {
     right: -25px; }
   .owl-carousel.home-slider {
-    overflow: visible
+    overflow: visible;
     height: 750px;
     z-index: 0; }
     .owl-carousel.home-slider .slider-item {
