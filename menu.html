@@ -29,6 +29,33 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<style>
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button img {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+
+
+
 		.logo {
 			width: 100px;
 		}
@@ -36,6 +63,9 @@
 </head>
 
 <body>
+	<a href="https://wa.me/5511944497191" target="_blank" class="whatsapp-button" aria-label="WhatsApp">
+		<img src="https://img.icons8.com/fluency/48/whatsapp.png" alt="WhatsApp">
+	  </a>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html"><img class="logo" src="WhatsApp Image 2025-01-24 at 11.22.15 AM.jpeg" /></a>

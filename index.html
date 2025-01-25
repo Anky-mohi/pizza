@@ -29,9 +29,106 @@
     <link rel="stylesheet" href="css/style.css">
 	<style>
 
+.pizza-combo-section {
+  background: #ffecd1;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #d84315;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.combo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Combo Cards with Different Background Colors */
+.combo-card {
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.combo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.combo-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Order Button */
+.order-button {
+  background: #d84315;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.order-button:hover {
+  background: #bf360c;
+}
+
+/* Different Background Colors for Each Card */
+.combo-card-1 {
+  background: #236030;
+}
+
+.combo-card-2 {
+  background: #817a7a;
+}
+
+.combo-card-3 {
+  background: #ef3026;
+}
 
 
 
+
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button img {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
 
 
 
@@ -44,6 +141,10 @@
 	</style>
   </head>
   <body>
+	<a href="https://wa.me/5511944497191" target="_blank" class="whatsapp-button" aria-label="WhatsApp">
+		<img src="https://img.icons8.com/fluency/48/whatsapp.png" alt="WhatsApp">
+	  </a>
+	  
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.html"><img class="logo" src="WhatsApp Image 2025-01-24 at 11.22.15 AM.jpeg" /></a>
@@ -493,7 +594,7 @@
 						</div>
 					</div>
 					<div class="pricing-entry d-flex ftco-animate">
-						<div class="img" style="background-image: url(images/pizza-9.jpg);"></div>
+						<div class="img" style="background-image: url(images/pizza-2.jpg);"></div>
 						<div class="desc pl-3">
 							<div class="d-flex text align-items-center">
 								<h3><span>BAURU</span></h3>
@@ -505,7 +606,7 @@
 						</div>
 					</div>
 					<div class="pricing-entry d-flex ftco-animate">
-						<div class="img" style="background-image: url(images/pizza-10.jpg);"></div>
+						<div class="img" style="background-image: url(images/pizza-3.jpg);"></div>
 						<div class="desc pl-3">
 							<div class="d-flex text align-items-center">
 								<h3><span>CALABRESA</span></h3>
@@ -525,6 +626,34 @@
 		</div>
 		
 	</section>
+
+
+	<section class="pizza-combo-section">
+		<div class="container">
+		  <h2 class="section-title">Nossos Combos de Pizza</h2>
+		  <div class="combo-grid">
+			<div class="combo-card combo-card-1">
+			  <h3>20 Pizzas Individuais</h3>
+			  <p class="price">600 Reais</p>
+			  <button class="order-button">Fazer Pedido</button>
+			</div>
+			<div class="combo-card combo-card-2">
+			  <h3>30 Pizzas Individuais</h3>
+			  <p class="price">800 Reais</p>
+			  <button class="order-button">Fazer Pedido</button>
+			</div>
+			<div class="combo-card combo-card-3">
+			  <h3>50 Pizzas Individuais</h3>
+			  <p class="price">1000 Reais</p>
+			  <button class="order-button">Fazer Pedido</button>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+  
+
+
 
 
     <section class="ftco-gallery">
@@ -653,7 +782,8 @@
 	  
 
 
-
+	  
+	
 
 
 
